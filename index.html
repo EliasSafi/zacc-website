@@ -1,174 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZACC - Ziaullah Ahmadzai Construction Company</title>
-  <style>
-    :root {
-      --primary-blue: #1e3a8a;
-      --accent-yellow: #fbbf24;
-      --text-color: #f1f5f9;
-      --background-dark: #0f172a;
-    }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: var(--background-dark);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
+  nav a {
+    margin: 0.5rem 0;
+  }
 
-    header {
-      background-color: var(--primary-blue);
-      padding: 1.5rem;
-      text-align: center;
-    }
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
 
-    nav {
-      background-color: #172554;
-      display: flex;
-      justify-content: center;
-      padding: 0.5rem 0;
-    }
+  .hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 
-    nav a {
-      color: var(--text-color);
-      margin: 0 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: var(--accent-yellow);
-    }
-
-    .hero {
-      background-color: #1e40af;
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .services {
-      padding: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-
-    .service-card {
-      background-color: #1e293b;
-      border-left: 5px solid var(--accent-yellow);
-      margin: 1rem;
-      padding: 1rem;
-      width: 280px;
-      border-radius: 8px;
-    }
-
-    .service-card h3 {
-      margin-top: 0;
-    }
-
-    .about, .projects, .testimonials, .contact {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .section-title {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: var(--accent-yellow);
-    }
-
-    footer {
-      background-color: var(--primary-blue);
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>ZACC</h1>
-    <p>Ziaullah Ahmadzai Construction Company</p>
-  </header>
-
-  <nav>
-    <a href="#">Home</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section class="hero">
-    <h2>Building with Integrity & Strength</h2>
-    <p>We provide top-notch construction solutions for residential, commercial, and infrastructure projects with professionalism and reliability.</p>
-  </section>
-
-  <section id="services" class="services">
-    <div class="service-card">
-      <h3>Residential Projects</h3>
-      <p>Elegant and durable home constructions tailored to your lifestyle and needs.</p>
-    </div>
-    <div class="service-card">
-      <h3>Commercial Buildings</h3>
-      <p>Smart commercial structures designed for functionality, safety, and modern design.</p>
-    </div>
-    <div class="service-card">
-      <h3>Infrastructure Development</h3>
-      <p>Roads, bridges, and public works built to last and serve communities for generations.</p>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <h2 class="section-title">About Us</h2>
-    <p>Ziaullah Ahmadzai Construction Company (ZACC) was founded with a vision to elevate the construction standards across the region. With a strong commitment to safety, sustainability, and quality, we continue to deliver excellence in every brick we lay and every beam we set.</p>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2 class="section-title">Featured Projects</h2>
-    <p>From luxury villas to government infrastructure, ZACC has successfully completed over 300 projects. Our team of experienced engineers, architects, and laborers work together to meet deadlines and exceed expectations. Our ongoing projects include a commercial complex in Kabul and a road reconstruction project in Nangarhar.</p>
-  </section>
-
-  <section id="testimonials" class="testimonials">
-    <h2 class="section-title">Client Testimonials</h2>
-    <p>"ZACC turned our vision into reality with professionalism and dedication. Their commitment to quality is unmatched." – Ahmad H., Property Developer</p>
-    <p>"They built our family home exactly the way we dreamed of. Highly recommended for any residential work." – Latifa S., Client</p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <p>Want to work with us or get a quote? Reach out today:</p>
-    <ul>
-      <li>Email: contact@zaccbuilds.com</li>
-      <li>Phone: +93 700 000 000</li>
-      <li>Office: Kabul, Afghanistan</li>
-    </ul>
-  </section>
-
-  <footer>
-    &copy; 2025 ZACC - Ziaullah Ahmadzai Construction Company. All rights reserved.
-  </footer>
-</body>
-</html>
+  .service-card {
+    width: 90%;
+  }
+}
