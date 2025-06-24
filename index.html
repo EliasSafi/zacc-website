@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZACC - Ziaullah Ahmadzai Construction Company</title>
+  <style>
+    :root {
+      --primary-blue: #1e3a8a; /* Deep but bright blue */
+      --accent-yellow: #fbbf24; /* Contrasting yellow */
+      --text-color: #f1f5f9;
+      --background-dark: #0f172a;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--background-dark);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-blue);
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #172554;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+
+    nav a {
+      color: var(--text-color);
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent-yellow);
+    }
+
+    .hero {
+      background-color: #1e40af;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .services {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .service-card {
+      background-color: #1e293b;
+      border-left: 5px solid var(--accent-yellow);
+      margin: 1rem;
+      padding: 1rem;
+      width: 280px;
+      border-radius: 8px;
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: var(--primary-blue);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZACC</h1>
+    <p>Ziaullah Ahmadzai Construction Company</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Building with Integrity & Strength</h2>
+    <p>We provide top-notch construction solutions for residential, commercial, and infrastructure projects with professionalism and reliability.</p>
+  </section>
+
+  <section id="services" class="services">
+    <div class="service-card">
+      <h3>Residential Projects</h3>
+      <p>Elegant and durable home constructions tailored to your lifestyle and needs.</p>
+    </div>
+    <div class="service-card">
+      <h3>Commercial Buildings</h3>
+      <p>Smart commercial structures designed for functionality, safety, and modern design.</p>
+    </div>
+    <div class="service-card">
+      <h3>Infrastructure Development</h3>
+      <p>Roads, bridges, and public works built to last and serve communities for generations.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ZACC - Ziaullah Ahmadzai Construction Company. All rights reserved.
+  </footer>
+</body>
+</html>
