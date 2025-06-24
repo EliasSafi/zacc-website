@@ -31,17 +31,34 @@
       font-size: 2.5rem;
     }
 
+    .menu-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: var(--primary-blue);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      z-index: 999;
+      border-radius: 5px;
+    }
+
     nav {
+      position: fixed;
+      top: 3.5rem;
+      right: 1rem;
       background-color: #172554;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 0.5rem 0;
+      display: none;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: 8px;
+      z-index: 998;
     }
 
     nav a {
       color: var(--text-color);
-      margin: 0 1.5rem;
+      margin: 0.5rem 0;
       text-decoration: none;
       font-weight: bold;
     }
@@ -106,17 +123,7 @@
       font-size: 0.9rem;
     }
 
-    /* Responsive styles for mobile (iPhone, etc.) */
     @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav a {
-        margin: 0.5rem 0;
-      }
-
       .services {
         flex-direction: column;
         align-items: center;
@@ -143,7 +150,9 @@
     <p>Ziaullah Ahmadzai Construction Company</p>
   </header>
 
-  <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+  <nav id="menu">
     <a href="#">Home</a>
     <a href="#services">Services</a>
     <a href="#about">About</a>
@@ -201,5 +210,12 @@
   <footer>
     &copy; 2025 ZACC - Ziaullah Ahmadzai Construction Company. All rights reserved.
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+    }
+  </script>
 </body>
 </html>
